@@ -23,4 +23,9 @@ describe StringCalculator do
   expect(StringCalculator.add(nums)).to eq(128814021)
   end
   
+  it "returns '0' for an empty string" do
+    nums = ""
+    expect(StringCalculator.add(nums)).to eq(0)
+  end
+  
 end
