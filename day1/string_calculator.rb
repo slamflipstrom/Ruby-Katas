@@ -9,8 +9,8 @@ module StringCalculator
     if nums.empty? 
       0
     else
-      nums.split(/\W+/).map{ |x| x.to_i }
-      nums.inject(:+)
+      x=nums.split(/\W+/).map{ |x| x.to_i }
+      x.inject(:+)
     end
   end
   
